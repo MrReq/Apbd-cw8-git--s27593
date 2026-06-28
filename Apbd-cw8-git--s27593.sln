@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apbd-cw8-git--s27593", "Apbd-cw8-git--s27593\Apbd-cw8-git--s27593.csproj", "{527E7B51-9963-4591-A1F5-DC555C882182}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{527E7B51-9963-4591-A1F5-DC555C882182}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{527E7B51-9963-4591-A1F5-DC555C882182}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{527E7B51-9963-4591-A1F5-DC555C882182}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{527E7B51-9963-4591-A1F5-DC555C882182}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
