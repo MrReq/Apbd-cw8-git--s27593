@@ -1,0 +1,12 @@
+﻿Użyjcie ASP.NET Core MVC i EF Core.
+Pracujcie w podejściu Code First, czyli najpierw klasy C#, potem baza.
+Utwórzcie własny DbContext, na przykład LibraryDbContext.
+DbContext ma mieć DbSet dla Author, Book i Borrowing.
+Connection string ma być w appsettings.json, a nie wpisany na sztywno w kodzie.
+DbContext zarejestrujcie w Program.cs przez AddDbContext.
+Nie twórzcie DbContext ręcznie przez new w kontrolerach.
+Utwórzcie migrację EF Core i zaaplikujcie ją do bazy.
+W projekcie powinien powstać folder Migrations.
+Relacje skonfigurujcie co najmniej częściowo przez Fluent API.
+Dodajcie seeding danych. Może być przez HasData albo przez własny seeder.
+Reguły biznesowe trzymajcie w serwisie, a nie bezpośrednio w kontrolerze.

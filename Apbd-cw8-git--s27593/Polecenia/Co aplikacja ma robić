@@ -1,0 +1,7 @@
+﻿Strona /Books ma pokazywać listę książek.
+Na liście książek ma być widoczny tytuł, ISBN, rok wydania i autor.
+Strona /Books/Create ma pozwalać dodać książkę i wybrać autora z listy.
+Strona /Authors ma pokazywać listę autorów.
+Strona /Borrowings/Create ma pozwalać dodać wypożyczenie dla wybranej książki.
+Strona szczegółów książki ma pokazywać dane książki i historię wypożyczeń.
+Po utworzeniu bazy aplikacja ma mieć dane startowe: minimum 3 autorów i 5 książek.

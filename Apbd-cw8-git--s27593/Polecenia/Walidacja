@@ -1,0 +1,6 @@
+﻿Walidacja
+Title książki jest wymagane.
+Isbn jest wymagane.
+PublishedYear powinien być większy niż 1900.
+BorrowerName jest wymagane.
+Nie można dodać wypożyczenia dla książki, która nie istnieje.

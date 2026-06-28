@@ -14,11 +14,12 @@
     <ItemGroup>
       <Folder Include="Controllers\" />
       <Folder Include="DAL\" />
-      <Folder Include="DTOs\" />
+      <Folder Include="DTOs\Requests\" />
+      <Folder Include="DTOs\Responses\" />
       <Folder Include="Exceptions\" />
       <Folder Include="Middleware\" />
-      <Folder Include="Models\" />
-      <Folder Include="Repositories\" />
+      <Folder Include="Repositories\Implementation\" />
+      <Folder Include="Repositories\Interfaces\" />
       <Folder Include="Services\" />
       <Folder Include="SQL\" />
     </ItemGroup>

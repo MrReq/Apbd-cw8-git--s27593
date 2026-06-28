@@ -1,0 +1,4 @@
+﻿Najpierw zróbcie encje i relacje. Dopiero potem kontrolery i widoki. To jest ważne, bo w EF Core model danych jest punktem wyjścia.
+
+Jeżeli seedujecie dane przez HasData, pamiętajcie o stałych Id. 
+Jeżeli robicie własny seeder w Program.cs, zadbajcie o idempotentność, czyli ponowne uruchomienie aplikacji nie może dublować tych samych danych.

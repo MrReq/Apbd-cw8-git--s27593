@@ -1,0 +1,9 @@
+﻿Odpowiedzcie krótko:
+
+Co oznacza ORM i jaki problem rozwiązuje EF Core?
+Jaka jest rola DbContext?
+Czym DbSet różni się od zwykłej listy w C#?
+Dlaczego DbContext w aplikacji webowej powinien być Scoped?
+Co robi migracja EF Core?
+Dlaczego seeding powinien być idempotentny?
+Kiedy Code First jest dobrym wyborem, a kiedy lepiej rozważyć Database First?

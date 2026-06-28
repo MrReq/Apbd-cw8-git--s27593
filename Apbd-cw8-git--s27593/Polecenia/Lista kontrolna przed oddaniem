@@ -1,0 +1,9 @@
+﻿Czy aplikacja się uruchamia?
+Czy baza tworzy się po migracji?
+Czy dane startowe są widoczne?
+Czy lista książek pokazuje autora?
+Czy da się dodać książkę?
+Czy da się dodać wypożyczenie?
+Czy walidacja formularzy działa?
+Czy kontrolery nie mają za dużo logiki biznesowej?
+Czy connection string nie zawiera prawdziwych haseł produkcyjnych?

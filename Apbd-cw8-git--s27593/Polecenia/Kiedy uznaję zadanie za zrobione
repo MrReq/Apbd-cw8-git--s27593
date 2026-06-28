@@ -1,0 +1,1 @@
+﻿Zadanie jest OK, jeżeli aplikacja działa jako proste MVC, używa EF Core w podejściu Code First, ma poprawne relacje, migrację, dane startowe i czytelnie pokazuje użycie DbContext oraz DbSet.

@@ -1,0 +1,1 @@
+﻿Zadanie do wykładu 8 polega na zbudowaniu małej aplikacji ASP.NET Core MVC z Entity Framework Core w podejściu Code First. Celem jest przećwiczenie DbContext, encji, relacji, migracji i seedingu.

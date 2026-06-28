@@ -1,0 +1,8 @@
+﻿Oddajcie projekt albo link do repozytorium. Dodajcie README.md, w którym napiszecie:
+
+jak uruchomić aplikację,
+jak utworzyć albo odtworzyć bazę,
+jaką komendą utworzyliście migrację,
+gdzie jest DbContext,
+gdzie jest konfiguracja relacji,
+gdzie jest seeding.

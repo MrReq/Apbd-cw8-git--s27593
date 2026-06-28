@@ -1,0 +1,93 @@
+﻿Zadanie programistyczne: Biblioteka kursowa
+Zadanie do wykładu 8 polega na zbudowaniu małej aplikacji ASP.NET Core MVC z Entity Framework Core w podejściu Code First. 
+Celem jest przećwiczenie DbContext, encji, relacji, migracji i seedingu.
+
+Temat aplikacji
+Przygotujcie prostą aplikację MVC do obsługi książek w małej bibliotece uczelnianej. Aplikacja ma mieć autorów, książki i wypożyczenia.
+
+Minimalny model
+Author
+Id
+FirstName
+LastName
+Book
+Id
+Title
+Isbn
+PublishedYear
+AuthorId
+Borrowing
+Id
+BookId
+BorrowerName
+BorrowedAt
+ReturnedAt
+Relacje
+Jeden autor może mieć wiele książek.
+Jedna książka może mieć wiele wypożyczeń.
+Wypożyczenie musi wskazywać książkę.
+Co aplikacja ma robić
+Strona /Books ma pokazywać listę książek.
+Na liście książek ma być widoczny tytuł, ISBN, rok wydania i autor.
+Strona /Books/Create ma pozwalać dodać książkę i wybrać autora z listy.
+Strona /Authors ma pokazywać listę autorów.
+Strona /Borrowings/Create ma pozwalać dodać wypożyczenie dla wybranej książki.
+Strona szczegółów książki ma pokazywać dane książki i historię wypożyczeń.
+Po utworzeniu bazy aplikacja ma mieć dane startowe: minimum 3 autorów i 5 książek.
+Wymagania techniczne
+Użyjcie ASP.NET Core MVC i EF Core.
+Pracujcie w podejściu Code First, czyli najpierw klasy C#, potem baza.
+Utwórzcie własny DbContext, na przykład LibraryDbContext.
+DbContext ma mieć DbSet dla Author, Book i Borrowing.
+Connection string ma być w appsettings.json, a nie wpisany na sztywno w kodzie.
+DbContext zarejestrujcie w Program.cs przez AddDbContext.
+Nie twórzcie DbContext ręcznie przez new w kontrolerach.
+Utwórzcie migrację EF Core i zaaplikujcie ją do bazy.
+W projekcie powinien powstać folder Migrations.
+Relacje skonfigurujcie co najmniej częściowo przez Fluent API.
+Dodajcie seeding danych. Może być przez HasData albo przez własny seeder.
+Reguły biznesowe trzymajcie w serwisie, a nie bezpośrednio w kontrolerze.
+Walidacja
+Title książki jest wymagane.
+Isbn jest wymagane.
+PublishedYear powinien być większy niż 1900.
+BorrowerName jest wymagane.
+Nie można dodać wypożyczenia dla książki, która nie istnieje.
+Wskazówki
+Najpierw zróbcie encje i relacje. Dopiero potem kontrolery i widoki. 
+To jest ważne, bo w EF Core model danych jest punktem wyjścia.
+
+Jeżeli seedujecie dane przez HasData, pamiętajcie o stałych Id. 
+Jeżeli robicie własny seeder w Program.cs, zadbajcie o idempotentność, czyli ponowne uruchomienie aplikacji nie może dublować tych samych danych.
+
+Co oddać
+Oddajcie projekt albo link do repozytorium. Dodajcie README.md, w którym napiszecie:
+
+jak uruchomić aplikację,
+jak utworzyć albo odtworzyć bazę,
+jaką komendą utworzyliście migrację,
+gdzie jest DbContext,
+gdzie jest konfiguracja relacji,
+gdzie jest seeding.
+Lista kontrolna przed oddaniem
+Czy aplikacja się uruchamia?
+Czy baza tworzy się po migracji?
+Czy dane startowe są widoczne?
+Czy lista książek pokazuje autora?
+Czy da się dodać książkę?
+Czy da się dodać wypożyczenie?
+Czy walidacja formularzy działa?
+Czy kontrolery nie mają za dużo logiki biznesowej?
+Czy connection string nie zawiera prawdziwych haseł produkcyjnych?
+Pytania do README
+Odpowiedzcie krótko:
+
+Co oznacza ORM i jaki problem rozwiązuje EF Core?
+Jaka jest rola DbContext?
+Czym DbSet różni się od zwykłej listy w C#?
+Dlaczego DbContext w aplikacji webowej powinien być Scoped?
+Co robi migracja EF Core?
+Dlaczego seeding powinien być idempotentny?
+Kiedy Code First jest dobrym wyborem, a kiedy lepiej rozważyć Database First?
+Kiedy uznaję zadanie za zrobione
+Zadanie jest OK, jeżeli aplikacja działa jako proste MVC, używa EF Core w podejściu Code First, ma poprawne relacje, migrację, dane startowe i czytelnie pokazuje użycie DbContext oraz DbSet.
